@@ -1,63 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Be My Valentine 💘</title>
-  <style>
-    body {
-      background: pink;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      font-family: Arial;
-    }
-    .box {
-      background: #ffe6ee;
-      padding: 30px;
-      border-radius: 15px;
-      text-align: center;
-      width: 300px;
-    }
-    button {
-      padding: 10px 20px;
-      border-radius: 20px;
-      border: none;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    #yes {
-      background: #ff3366;
-      color: white;
-    }
-    #no {
-      position: absolute;
-      background: white;
-      color: #ff3366;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="box">
-  <h2>❤️ Chahat ❤️</h2>
-  <h3>Will you be my Valentine? 💖</h3>
-  <button id="yes">Yes 💕</button>
-  <button id="no">No 😜</button>
+<div class="container">
+  <h1>❤️ Chahat ❤️</h1>
+  <h2>Will you be my Valentine? 💖</h2>
+
+  <div class="buttons">
+    <button id="yes">Yes 💕</button>
+    <button id="no">No 😜</button>
+  </div>
+
+  <p class="quote">“Every moment with you feels like a dream come true…”</p>
 </div>
 
-<script>
-  const noBtn = document.getElementById("no");
-
-  noBtn.addEventListener("mouseover", () => {
-    noBtn.style.left = Math.random() * 200 + "px";
-    noBtn.style.top = Math.random() * 200 + "px";
-  });
-
-  document.getElementById("yes").onclick = () => {
-    document.body.innerHTML = "<h1>Yayyy 💖🥰</h1>";
-  };
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
